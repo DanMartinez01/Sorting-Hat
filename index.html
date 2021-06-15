@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Hat</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1> Sombrero seleccionador</h1>
+
+        <form id="form" class="form">
+            <div class="form-control">
+                <input type="text" placeholder="Nombre" id="username">
+                <small>Error message</small>
+            </div>
+            <button>Ingresar</button>
+        </form>
+        <form id="quiz" name="quiz">
+            <div>
+                <p>Cual es tu color favorito?</p>
+                <p><input type="radio" name="question1" value="1"> Rojo</p>
+                <p><input type="radio" name="question1" value="1"> Verde</p>
+                <p><input type="radio" name="question1" value="1"> Azul </p>
+                <p><input type="radio" name="question1" value="1"> Amarillo </p>
+            </div>
+            <div>
+                <p>Cual es tu materia preferida?</p>
+                <p><input type="radio" name="question2" value="10"> Defensa contra las artes oscuras</p>
+                <p><input type="radio" name="question2" value="30"> Pociones</p>
+                <p><input type="radio" name="question2" value="50"> Historia de la magia</p>
+                <p><input type="radio" name="question2" value="70"> Creo que todas</p>
+            </div>
+            <div>
+                <p>Cual de estas cualidades te define?</p>
+                <p><input type="radio" name="question3" value="2"> Valentia </p>
+                <p><input type="radio" name="question3" value="4"> Astucia</p>
+                <p><input type="radio" name="question3" value="6"> Dedicacion </p>
+                <p><input type="radio" name="question3" value="8"> Lealtad</p>
+            </div>
+            <div>
+                <p>Esta pocion te garantizara lo que elijas, para siempre...</p>
+                <p><input type="radio" name="question4" value="1"> La gloria </p>
+                <p><input type="radio" name="question4" value="1"> El poder </p>
+                <p><input type="radio" name="question4" value="1"> La sabiduria</p>
+                <p><input type="radio" name="question4" value="1"> El amor</p>
+            </div>
+            <div>
+                <p>Como preferis pasar tus tardes?</p>
+                <p><input type="radio" name="question5" value="1"> Con mis mejores amigos </p>
+                <p><input type="radio" name="question5" value="1"> Haciendo bromas a los de 1er año </p>
+                <p><input type="radio" name="question5" value="1"> Leyendo </p>
+                <p><input type="radio" name="question5" value="1"> Escribiendo cartas a mi familia</p>
+            </div>
+
+            <input type="button" id="result" name="" value="Listo!" onClick="  calcularPuntaje()">
+        </form>
+        <div>
+            <span style="color: white ;font-weight:bold; font-size: 50px;" id="message2"> </span>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
